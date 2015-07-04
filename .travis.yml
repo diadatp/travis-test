@@ -1,0 +1,43 @@
+language: cpp
+
+before_install:
+  - echo $LANG
+  - echo $LC_ALL
+  - sudo apt-get update -qq && sudo apt-get install -y libxml2-dev
+
+install:
+  - echo "placeholder"
+
+before_script:
+  - echo "about to start build"
+
+script:
+  - echo "build running"
+
+after_success:
+  - echo "placeholder"
+
+after_failure:
+  - echo "placeholder"
+
+after_script:
+  - echo "placeholder"
+
+before_deploy:
+  - echo "placeholder"
+
+deploy:
+  - echo "placeholder"
+
+after_deploy:
+  - echo "placeholder"
+
+branches:
+  only:
+    - build
+
+notifications:
+  email: false
+
+os:
+  - linux
