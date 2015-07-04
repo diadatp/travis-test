@@ -12,14 +12,15 @@ before_script:
   - git clone --depth 1 --branch "v1.8.0" --single-branch https://github.com/nginx/nginx-releases.git nginx
 
 script:
-  - echo "build running"
   - ./build_nginx.sh
 
 after_success:
-  - echo "success. :)"
+  - echo "placeholder"
+  - ls -al
+  - ls -al *
 
 after_failure:
-  - echo "fail. :("
+  - echo "placeholder"
 
 after_script:
   - echo "placeholder"
