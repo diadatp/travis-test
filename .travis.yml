@@ -23,15 +23,6 @@ after_failure:
 after_script:
   - echo "placeholder"
 
-before_deploy:
-  - echo "placeholder"
-
-deploy:
-  - echo "placeholder"
-
-after_deploy:
-  - echo "placeholder"
-
 branches:
   only:
     - build
