@@ -43,5 +43,5 @@ cd nginx
 make
 make install
 
-../build/nginx -V
+../build/sbin/nginx -V
 
