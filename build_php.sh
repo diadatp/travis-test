@@ -3,7 +3,7 @@
 cd php-fpm
 
 ./buildconf --force
-./configure --prefix="$(pwd)/build'" \
+./configure --prefix="$(pwd)/build" \
 			--enable-fpm \
 			--with-mysql
 
