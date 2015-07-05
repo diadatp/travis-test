@@ -2,12 +2,12 @@
 
 cd php-fpm
 
-./buildconf
+./buildconf --force
 ./configure --prefix="$(pwd)/build'" \
 			--enable-fpm \
 			--with-mysql
 
-make
+make -j$(cat /proc/cpuinfo | grep "cpu cores" | cut -f3 -d' ' | head -n 1)
 make install
 
 cd ..
