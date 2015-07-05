@@ -2,8 +2,9 @@
 
 cd php-fpm
 
+./buildconf
 ./configure --prefix="$(pwd)/build'" \
-			# --enable-fpm \
+			--enable-fpm \
 			--with-mysql
 
 make
