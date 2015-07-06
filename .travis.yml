@@ -20,11 +20,11 @@ before_script:
   # - git clone --depth 1 --branch 'php-5.6.10' --single-branch https://github.com/php/php-src.git php-fpm
   - git clone --depth 1 --branch 'HHVM-3.6.0' --single-branch https://github.com/facebook/hhvm.git hhvm
   - ./build_hhvm_deps.sh
+  - ./build_hhvm.sh
 
 script:
-  # - ./build_nginx.sh
+  - ./build_nginx.sh
   # - ./build_php.sh
-  - ./build_hhvm.sh
 
 after_success:
   - ls -al *
