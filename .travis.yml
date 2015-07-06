@@ -16,8 +16,8 @@ install:
   - sudo update-alternatives --set gcc /usr/bin/gcc-4.8
 
 before_script:
-  - git clone --depth 1 --branch 'v1.8.0' --single-branch https://github.com/nginx/nginx-releases.git nginx
-  - git clone --depth 1 --branch 'php-5.6.10' --single-branch https://github.com/php/php-src.git php-fpm
+  # - git clone --depth 1 --branch 'v1.8.0' --single-branch https://github.com/nginx/nginx-releases.git nginx
+  # - git clone --depth 1 --branch 'php-5.6.10' --single-branch https://github.com/php/php-src.git php-fpm
   - git clone --depth 1 --branch 'HHVM-3.6.0' --single-branch https://github.com/facebook/hhvm.git hhvm
   - ./build_hhvm_deps.sh
 
@@ -27,7 +27,6 @@ script:
   - ./build_hhvm.sh
 
 after_success:
-  - ls -al
   - ls -al *
 
 after_failure:

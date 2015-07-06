@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-export CMAKE_PREFIX_PATH=$(pwd)/..
+export CMAKE_PREFIX_PATH=$(pwd)
 
 wget http://caml.inria.fr/pub/distrib/ocaml-4.02/ocaml-4.02.1.tar.gz
 tar xvf ocaml-4.02.1.tar.gz
 cd ocaml-4.02.1
-./configure
+./configure --prefix=$CMAKE_PREFIX_PATH
 make world.opt
 sudo make install
 cd ..
