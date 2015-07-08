@@ -33,6 +33,5 @@ tar xjvf jemalloc-3.6.0.tar.bz2
 cd jemalloc-3.6.0
 # ./configure --prefix=$CMAKE_PREFIX_PATH
 ./configure
-make
-sudo make install
+make && sudo make install
 cd ..
