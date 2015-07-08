@@ -40,8 +40,7 @@ cd nginx
 #			--user=www \
 #			--group=www \
 
-make
-make install
+make && make install
 
 cd ..
 ./build/sbin/nginx -V
