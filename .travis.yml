@@ -1,5 +1,5 @@
 language:
-  - cpp
+  - go
 
 env:
   - NGINX_VER="v1.8.0" PHP_VER="php-5.6.10" HHVM_VER="3.6.0"
