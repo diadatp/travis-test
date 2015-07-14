@@ -1,0 +1,1 @@
+Codeship does not allow root level access (i.e. commands run via sudo) for security reasons.

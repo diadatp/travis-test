@@ -6,7 +6,7 @@ cd hhvm
 export NUMCPUS=$(grep ^processor /proc/cpuinfo | wc -l)
 
 git submodule update --init --recursive
-cmake .
+cmake -DENABLE_MCROUTER=false .
 ionice -c3 nice -n 19 make -j$NUMCPUS --load-average=$NUMCPUS
 
 # wget http://dl.hhvm.com/ubuntu/pool/main/h/hhvm/hhvm_$HHVM_VER~trusty_amd64.deb
