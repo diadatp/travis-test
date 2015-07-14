@@ -27,8 +27,8 @@ before_script:
   - git clone --depth 1 --branch 'HHVM-3.6.0' --single-branch https://github.com/facebook/hhvm.git hhvm
 
 script:
-  - ./build_nginx.sh
-  - ./build_php.sh
+  # - ./build_nginx.sh
+  # - ./build_php.sh
   - ./build_hhvm.sh
 
 after_success:
