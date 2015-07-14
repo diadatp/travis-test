@@ -13,12 +13,12 @@ install:
   - sudo apt-get -y install apt-fast
   - sudo apt-get -y install build-essential zlib1g-dev libpcre3-dev libssl-dev libxslt1-dev libxml2-dev libgd2-xpm-dev libgeoip-dev libgoogle-perftools-dev libperl-dev
   - sudo apt-get -y install build-essential autoconf automake libtool bison re2c
-  # - sudo apt-get install -y git-core gawk cmake g++ libmysqlclient-dev libxml2-dev libmcrypt-dev libicu-dev openssl build-essential binutils-dev libcap-dev libgd2-xpm-dev zlib1g-dev libtbb-dev libonig-dev libpcre3-dev autoconf automake libtool libcurl4-openssl-dev wget memcached libreadline-dev libncurses-dev libmemcached-dev libbz2-dev libc-client2007e-dev php5-mcrypt php5-imagick libgoogle-perftools-dev libcloog-ppl0 libelf-dev libdwarf-dev subversion python-software-properties libmagickwand-dev libxslt1-dev libevent-dev gawk libyaml-dev gperf
-  # - sudo apt-get install -y gcc-4.8 g++-4.8
-  # - sudo apt-get install -y libboost1.55-all-dev
-  # - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
-  # - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
-  # - sudo update-alternatives --set gcc /usr/bin/gcc-4.8
+  - sudo apt-get install -y git-core gawk cmake g++ libmysqlclient-dev libxml2-dev libmcrypt-dev libicu-dev openssl build-essential binutils-dev libcap-dev libgd2-xpm-dev zlib1g-dev libtbb-dev libonig-dev libpcre3-dev autoconf automake libtool libcurl4-openssl-dev wget memcached libreadline-dev libncurses-dev libmemcached-dev libbz2-dev libc-client2007e-dev php5-mcrypt php5-imagick libgoogle-perftools-dev libcloog-ppl0 libelf-dev libdwarf-dev subversion python-software-properties libmagickwand-dev libxslt1-dev libevent-dev gawk libyaml-dev gperf
+  - sudo apt-get install -y gcc-4.8 g++-4.8
+  - sudo apt-get install -y libboost1.55-all-dev
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
+  - sudo update-alternatives --set gcc /usr/bin/gcc-4.8
   - ./build_hhvm_deps.sh
 
 before_script:
